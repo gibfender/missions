@@ -41,3 +41,4 @@ missions.log*
 .vagrant
 *console.log
 /.vagrant/
+.env
