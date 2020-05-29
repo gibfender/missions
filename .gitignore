@@ -42,12 +42,5 @@ missions.log*
 *console.log
 /.vagrant/
 .env
-/.idea/.gitignore
-/.idea/dataSources.xml
-/.idea/misc.xml
-/.idea/missions.iml
-/.idea/modules.xml
-/.idea/inspectionProfiles/profiles_settings.xml
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/vcs.xml
-/.idea/webResources.xml
+/.idea/
+/data/

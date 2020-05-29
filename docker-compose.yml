@@ -1,0 +1,19 @@
+version: '3'
+services:
+  missions:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql
+  mysql:
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    image: mysql:5.7
+    command: mysqld --sql_mode="NO_ENGINE_SUBSTITUTION"
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: itsasecret
